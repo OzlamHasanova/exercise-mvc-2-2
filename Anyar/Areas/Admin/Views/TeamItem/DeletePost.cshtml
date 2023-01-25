@@ -1,0 +1,14 @@
+﻿@using Core.Entities;
+@model TeamItems
+@{
+    ViewData["Title"] = "DeletePost";
+}
+
+<h1>DeletePost</h1>
+<h2>@Model.Name</h2>
+<p>@Model.Desc</p>
+<img src="~/admin/assets/images/faces/@Model.Image" alt="image" />
+<form method="post">
+    <a class="btn btn-info" asp-action="Delete">Go Back</a>
+
+</form>
